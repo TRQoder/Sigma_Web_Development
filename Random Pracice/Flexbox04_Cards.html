@@ -1,0 +1,66 @@
+<!-- Let's explore creating a centered and responsive card layout using Flexbox. Here are the requirements:
+
+1. Create a container that spans the full width of the viewport and has a background color of your choice.
+2. Inside the container, create three cards horizontally aligned.
+3. Each card should have a fixed width of 200px, a height of 300px, and some content inside (e.g., text).
+4. Center the cards both horizontally and vertically within the container.
+5. Implement a responsive design: when the screen width is less than 600px, the cards should stack vertically.
+
+Give it a try, and let me know if you have any questions or if you'd like further guidance! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cards {
+        width: 200px;
+        height: 300px;
+        background-color: brown;
+        padding: 10px;
+        margin: 10px;
+      }
+      @media (max-width:600px){
+        .container{
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="cards">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quos
+        esse totam veritatis nesciunt ad nobis quasi repellat molestias minus
+        recusandae iusto vitae consequuntur alias sit fuga veniam reiciendis
+        molestiae?
+      </div>
+      <div class="cards">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        aspernatur ab nihil fuga perferendis, quas totam? Laborum, aliquid!
+        Atque, a. Delectus facilis eligendi explicabo modi aut, natus quos eos
+        reprehenderit.
+      </div>
+      <div class="cards">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio obcaecati
+        officiis ipsum quam. Ipsum quis voluptatem magnam deleniti, ut quaerat,
+        inventore neque, cum modi saepe cumque reprehenderit architecto facilis
+        voluptatum!
+      </div>
+    </div>
+  </body>
+</html>

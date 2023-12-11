@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    nav {
+      background-color: darkgray;
+      height: 8vh;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navItems {
+      /* background-color: red; */
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+        height: auto;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="navItems"><a href="#">Home</a></div>
+      <div class="navItems"><a href="#">Contact</a></div>
+      <div class="navItems"><a href="#">About</a></div>
+      <div class="navItems"><a href="#">Privacy</a></div>
+    </nav>
+  </body>
+</html>

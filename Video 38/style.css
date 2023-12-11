@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid red;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align items used for single line and 
+    align content used for multiple lines */
+    align-content:center ;
+    flex-direction: row-reverse;
+    
+
+}
+.items{
+    height:32px;
+    width:32px;
+    border: 2px solid black;
+    margin: 4px;
+    background-color: blueviolet;
+}
+
+/* Points to be noted:
+justify-content --> used for main direction 
+align-items --> used for cross direction (single line)
+align-content --> used for cross direction (multiple lines)
+align-self ---> used for only one item adjustment */

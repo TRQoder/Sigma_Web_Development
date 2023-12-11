@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        html{
+            display: flex;
+            justify-content: center;
+            align-content:end;
+        }
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+            display: flex;
+            align-items: flex-end;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(31, 240, 4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: small;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: 
+                       moveY 0.5s ease-in-out 1s 6 alternate-reverse ;
+        }
+        @keyframes moveX {
+            from{
+
+            }
+            to{
+                transform: translateX(40vw) ;
+            }
+        }
+        @keyframes moveY {
+            from{
+
+            }
+            to{
+                transform: translateY(-40vh) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">BALL</div>
+    </div>
+</body>
+</html>
